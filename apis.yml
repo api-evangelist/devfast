@@ -1,7 +1,17 @@
 aid: devfast
-name: Devfast
-description: Devfast is a company surfaced as a portfolio company of y-combinator and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+name: /dev/fast
+description: >-
+  /dev/fast is an AI-native code forge — code review, deployment infrastructure,
+  and hosting rebuilt for the AI era. The product reframes code hosting, review,
+  and CI/CD around software written and shipped by agents: an RFC-style review
+  surface optimized for human taste and judgement, a multi-agent software factory
+  that dispatches, supervises, and merges work from many cloud agents, agent-native
+  CI/CD where the agent writes declarative pipeline code testable locally, and a
+  fine-grained permission system, with every agent run captured and replayable.
+  Founded in 2025, /dev/fast is a Y Combinator Winter 2026 company based in San
+  Francisco, currently invite-only. It was added to the API Evangelist network as a
+  Y Combinator portfolio lead and enriched from its public surface; no public API,
+  developer documentation, or machine-readable specification is published yet.
 url: https://raw.githubusercontent.com/api-evangelist/devfast/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,14 +19,48 @@ x-backed-by:
 - y-combinator
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-stage: pre-launch
+accessModel:
+  pricing: unknown
+  onboarding: approval
+  trial: false
+  try_now: false
+  public: false
+  label: Requires approval
+  confidence: medium
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
+image: https://dev.fast/favicon.svg
 tags:
 - Company
+- Developer Tools
+- Code Review
+- Code Hosting
+- Deployment
+- CI/CD
+- AI Agents
+- Y Combinator
 apis: []
+common:
+- type: Website
+  url: https://dev.fast/
+- type: CompanyProfile
+  url: https://www.ycombinator.com/companies/devfast
+- type: DomainSecurity
+  url: security/devfast-domain-security.yml
+- type: ContentSignal
+  url: well-known/devfast-well-known.yml
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

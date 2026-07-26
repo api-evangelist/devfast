@@ -1,0 +1,30 @@
+generated: '2026-07-18'
+method: searched
+host: https://dev.fast
+source: live probe of https://dev.fast/.well-known/* and /robots.txt
+documents:
+- path: /robots.txt
+  status: 200
+  file: devfast-robots.txt
+  note: >-
+    Cloudflare-managed AIPREF-style Content-Signal published for agents/crawlers.
+    Signal for User-agent *: search=yes, ai-train=no, use=reference. Named AI
+    crawlers are Disallowed (Amazonbot, Applebot-Extended, Bytespider, CCBot,
+    ClaudeBot, Google-Extended, GPTBot, meta-externalagent, and others).
+- path: /.well-known/security.txt
+  status: 500
+- path: /.well-known/openid-configuration
+  status: 500
+- path: /.well-known/oauth-authorization-server
+  status: 500
+- path: /.well-known/api-catalog
+  status: 500
+- path: /.well-known/ai-plugin.json
+  status: 500
+content_signal:
+  source: /robots.txt
+  standard: Cloudflare Content Signals Policy (AIPREF-aligned)
+  signals:
+    search: 'yes'
+    ai-train: 'no'
+    use: reference
