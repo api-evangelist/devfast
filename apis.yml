@@ -44,7 +44,7 @@ accessModel:
   method: derived
 specificationVersion: '0.23'
 created: '2026-07-17'
-modified: '2026-07-18'
+modified: '2026-10-06'
 image: https://dev.fast/favicon.svg
 tags:
 - Company
@@ -57,6 +57,8 @@ tags:
 - Y Combinator
 apis: []
 common:
+- url: https://dev.fast/blog/
+  type: Blog
 - type: Website
   url: https://dev.fast/
 - type: CompanyProfile
